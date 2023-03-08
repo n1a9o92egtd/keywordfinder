@@ -46,6 +46,10 @@ func findKeywords(root string, keywords []string) ([]string, error) {
 			return nil
 		}
 
+		if info == nil {
+			return nil
+		}
+		
 		if info.IsDir() {
 			return nil
 		}
